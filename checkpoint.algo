@@ -1,0 +1,23 @@
+ALGORITHM Sentence_Checkpoint
+VAR
+    str: STRING
+    NB_C, NB_W,NB_V: INTEGER := 0
+    i : INTEGER
+BEGIN
+    write("write a sentenca that end with a point")
+    read(str)
+    While(stri(i) <> ".") DO
+            NB_C = NB_C + 1
+    
+        IF (str(i)  = ("a","e", "i","u","o","y")) THEN 
+            NB_V= NB_v + 1
+        END_IF
+        IF (str(i) = " ") THEN
+            NB_W = NB_W + 1
+        END_IF
+        i++
+    END_WHILE
+        Write(NB_C)
+        Write(NB_V)
+        Write(NB_W)
+END
